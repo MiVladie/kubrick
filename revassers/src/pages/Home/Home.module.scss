@@ -1,0 +1,137 @@
+$container_width: 85%;
+$spacing: 3em;
+
+.Main {
+	width: $container_width;
+
+	display: flex;
+	justify-content: center;
+
+	flex-flow: column;
+
+	margin: 0 auto;
+
+	padding: calc(#{$spacing} / 1.5) 0;
+
+	.Logo {
+		width: 100%;
+		max-width: 400px;
+
+		object-fit: contain;
+
+		margin: 0 auto;
+
+		aspect-ratio: 5 / 2;
+	}
+
+	.Container {
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		flex-flow: column;
+
+		.Trailer,
+		.Actions {
+			width: 100%;
+
+			margin-top: $spacing;
+		}
+
+		.Actions {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			flex-flow: column;
+
+			button {
+				width: 85%;
+
+				margin-top: calc(#{$spacing} / 3);
+
+				&:nth-child(1) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 720px) {
+	$container_width: 75%;
+
+	.Main {
+		width: $container_width;
+
+		padding: $spacing 0;
+
+		.Logo {
+			width: 65%;
+		}
+
+		.Container {
+			.Actions {
+				button {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	$container_width: 75%;
+
+	.Main {
+		.Container {
+			.Actions {
+				flex-flow: row;
+
+				justify-content: space-around;
+
+				button {
+					width: 32%;
+
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	$container_width: 85%;
+
+	.Main {
+		width: $container_width;
+
+		.Logo {
+			width: 25%;
+			max-width: 350px;
+		}
+
+		.Container {
+			flex-flow: row;
+
+			.Trailer {
+				width: 70%;
+			}
+
+			.Actions {
+				width: 30%;
+
+				justify-content: center;
+				flex-flow: column;
+
+				button {
+					width: 65%;
+
+					margin-top: calc(#{$spacing} / 3);
+				}
+			}
+		}
+	}
+}

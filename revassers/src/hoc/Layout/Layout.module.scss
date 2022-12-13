@@ -1,0 +1,35 @@
+.Layout {
+	height: 100vh;
+	width: 100vw;
+
+	position: relative;
+
+	.Background {
+		background-image: url('../../assets/images/background.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		z-index: -100;
+
+		filter: brightness(0.8);
+	}
+
+	.Play {
+		filter: brightness(0.5);
+	}
+
+	.Content {
+		height: 100%;
+
+		max-width: 2048px;
+
+		margin: 0 auto;
+	}
+}
