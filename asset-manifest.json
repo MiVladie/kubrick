@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kubrick/static/css/main.58ebfd2b.css",
+    "main.js": "/kubrick/static/js/main.a6027c92.js",
+    "static/media/background.png": "/kubrick/static/media/background.5d1ee50026621ca4603c.png",
+    "static/media/logo.png": "/kubrick/static/media/logo.05d35ddd3d78d0a02b69.png",
+    "index.html": "/kubrick/index.html",
+    "main.58ebfd2b.css.map": "/kubrick/static/css/main.58ebfd2b.css.map",
+    "main.a6027c92.js.map": "/kubrick/static/js/main.a6027c92.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58ebfd2b.css",
+    "static/js/main.a6027c92.js"
+  ]
+}
